@@ -7,9 +7,9 @@
     bg-faded>
 
     <div class="container">
-      <nuxt-link to="/">
-        <b-navbar-brand href="#">TheBanditDave</b-navbar-brand>
-      </nuxt-link>
+      <b-navbar-brand
+        nuxt-link
+        to="/">TheBanditDave</b-navbar-brand>
 
       <b-navbar-toggle target="nav_collapse"/>
 
@@ -20,8 +20,12 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
 
-          <b-nav-item href="#">Blog</b-nav-item>
-          <b-nav-item href="#">Resume</b-nav-item>
+          <b-nav-item
+            nuxt-link
+            to="/blog">BLOG</b-nav-item>
+          <b-nav-item
+            nuxt-link
+            to="/resume">RESUME</b-nav-item>
 
         </b-navbar-nav>
 
@@ -37,7 +41,7 @@ export default {
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Freckle+Face'
+          href: 'https://fonts.googleapis.com/css?family=Knewave|Bangers'
         }
       ]
     }
@@ -51,7 +55,7 @@ body {
 }
 .navbar-brand {
   color: greenyellow !important;
-  font-family: 'Freckle Face', cursive;
+  font-family: 'Bangers', cursive;
   padding-top: unset;
   padding-bottom: unset;
   font-size: 1.7rem;
@@ -59,6 +63,7 @@ body {
 
 .nav-link {
   color: greenyellow !important;
+  font-family: 'Knewave', cursive;
 }
 
 .nav-link:hover {
